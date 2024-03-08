@@ -1,0 +1,142 @@
+:root{
+  --letra: Montserrat;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1280px;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+header {
+  position:fixed;
+  top: 0;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #212429;
+  width: 100%;
+  z-index: 1;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--letra);
+    font-size: 16px;
+    color: #212429;
+    background-color: white;
+}
+
+.imghead{
+  display: flex;
+}
+
+.containermoda{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  font-size: 16px;
+}
+
+.iconheader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconheader img {
+  margin-right: 24px;
+}
+.iconheader img:last-child {
+  margin-right: 0
+}
+
+main{
+top:80px;
+position: relative;
+}
+
+.newcolections {
+  font-size: 32px;
+  font-weight: bold;
+
+}
+
+p.newcolections::first-letter {
+  font-size: 40px;
+}
+
+.gridcontent {
+  display: grid;
+  grid-template:0.2fr 1fr 1fr /repeat(3, 1fr);
+  gap: 16px;
+  padding: 16px;
+  font-family: var(--letra);
+  }
+
+p {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.imgcard {
+  border-radius: 8px;
+}
+
+.textcard {
+ display: flex;
+ justify-content: space-around;
+ font-size: 14px;
+ width: 100%;
+}
+
+.price{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer{
+  background-color: #212429;
+  margin-top: 100px;
+  position: relative;
+  width: 100%;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--letra);
+  font-size: 16px;
+  color: #fff;
+  height: auto;
+  padding: 32px;
+}
+
+.imgfoot{
+  display: flex;
+}
+
+.circle{
+  display: flex;
+  margin-right: 16px;
+  background-color: #fff;
+  border-radius:50px;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
