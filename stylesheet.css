@@ -13,12 +13,16 @@
 }
 
 header {
+  background-color: #fff;
+  display: flex;
+  flex: 1;
   position:fixed;
   top: 0;
   margin-bottom: 32px;
   border-bottom: 1px solid #212429;
   width: 100%;
   z-index: 1;
+  width: 100%;
 }
 
 .header{
@@ -27,7 +31,7 @@ header {
     font-family: var(--letra);
     font-size: 16px;
     color: #212429;
-    background-color: white;
+background-color: white;
 }
 
 .imghead{
@@ -53,21 +57,30 @@ header {
 .iconheader img:last-child {
   margin-right: 0
 }
-
 main{
-top:80px;
-position: relative;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+  top:80px;
+  width: 100%;
 }
 
-.newcolections {
+.newcolections{
+  display: flex;
+  margin-top: 100px;
+}
+
+.letternewcolections {
+  width: 100%;
   font-size: 32px;
   font-weight: bold;
-
 }
 
-p.newcolections::first-letter {
+.letternewcolections::first-letter {
   font-size: 40px;
 }
+
 
 .gridcontent {
   display: grid;
@@ -94,6 +107,9 @@ p {
 
 .imgcard {
   border-radius: 8px;
+  display: flex;
+  flex: 1;
+  width: 80%;
 }
 
 .textcard {
@@ -109,6 +125,8 @@ p {
 }
 
 footer{
+  display: flex;
+  flex: 1;
   background-color: #212429;
   margin-top: 100px;
   position: relative;
@@ -117,12 +135,15 @@ footer{
 
 .foot {
   display: flex;
+  flex: 1;
+  gap:20px;
   justify-content: space-between;
   font-family: var(--letra);
   font-size: 16px;
   color: #fff;
   height: auto;
   padding: 32px;
+  width: 100%;
 }
 
 .imgfoot{
