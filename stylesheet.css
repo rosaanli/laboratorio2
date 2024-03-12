@@ -10,6 +10,7 @@
   /* width: 1280px; */
   padding: 16px;
   margin: 0 auto;
+  width: 100%;
 }
 
 header {
@@ -36,17 +37,26 @@ header {
   margin-left:5% ;/
 }
 
+p{
+  white-space: nowrap;
+}
+
 nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 ul {
   display: flex;
   list-style: none;
-  justify-content: space-around;
   align-items:center;
+}
+
+head{
+  display:
+  text-align: center;
 }
 
 .imghead{
