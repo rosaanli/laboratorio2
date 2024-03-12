@@ -7,7 +7,7 @@
 }
 
 .container {
-  width: 1280px;
+  /* width: 1280px; */
   padding: 16px;
   margin: 0 auto;
 }
@@ -26,12 +26,27 @@ header {
 }
 
 .header{
-    display: flex;
-    justify-content: space-between;
-    font-family: var(--letra);
-    font-size: 16px;
-    color: #212429;
-background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: var(--letra);
+  font-size: 16px;
+  color: #212429;
+  background-color: white;
+  margin-left:5% ;/
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items:center;
 }
 
 .imghead{
@@ -58,16 +73,17 @@ background-color: white;
   margin-right: 0
 }
 main{
-  display: flex;
+
   justify-content: center;
   flex: 1;
   position: relative;
-  top:80px;
+  top:32px;
   width: 100%;
 }
 
 .newcolections{
   display: flex;
+  margin-left: 5%;
   margin-top: 100px;
 }
 
@@ -81,20 +97,14 @@ main{
   font-size: 40px;
 }
 
-
 .gridcontent {
   display: grid;
-  grid-template:0.2fr 1fr 1fr /repeat(3, 1fr);
-  gap: 16px;
+  grid-auto-rows: 15rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.5rem;
   padding: 16px;
   font-family: var(--letra);
-  }
-
-p {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  margin-top: 5%;
   }
 
 .card {
@@ -105,11 +115,15 @@ p {
   padding: 16px;
 }
 
+.card:hover {
+  background-color: pink;
+}
+
 .imgcard {
   border-radius: 8px;
   display: flex;
   flex: 1;
-  width: 80%;
+  max-height: 200px;
 }
 
 .textcard {
@@ -128,7 +142,7 @@ footer{
   display: flex;
   flex: 1;
   background-color: #212429;
-  margin-top: 100px;
+  margin-top: 32px;
   position: relative;
   width: 100%;
 }
@@ -161,3 +175,31 @@ footer{
   align-items: center;
 }
 
+@media (max-width: 920px) {
+  .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: var(--letra);
+      font-size: 16px;
+      margin-left: 5%;/
+    }
+
+  ul{
+    list-style: none;
+    display: none;
+    }
+  .containermoda{
+     display: flex;
+    flex-direction: column;
+    }
+
+  .foot{
+    display: flex;
+    flex-direction: column;
+  }
+  .imgfoot{
+    border-bottom: 1px #fff solid;
+    padding: 8px;
+  }
+}
