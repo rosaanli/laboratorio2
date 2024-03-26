@@ -71,10 +71,10 @@ nav{
 
 .gridcontent {
   display: grid;
-  grid-auto-rows: 15rem;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   gap: 0.5rem;
   font-family: var(--letra);
+  justify-items: center;
   }
 
 .card {
@@ -91,9 +91,8 @@ nav{
 
 .imgcard {
   border-radius: 8px;
-  display: flex;
-  flex: 1;
-  max-height: 200px;
+  display: block;
+  width: 100%;
 }
 
 .textcard {
